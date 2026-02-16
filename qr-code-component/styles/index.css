@@ -1,0 +1,152 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --primary-color: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --color-slate-900: hsl(218, 44%, 22%);
+    --color-blue-600: #2C7DFA;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Outfit, sans-serif;
+    min-height: 100vh;
+    font-feature-settings: 'liga' off, 'clig' off;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.375rem;
+    line-height: 120%;
+    color: var(--color-slate-900);
+    font-feature-settings: inherit;
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.93rem;
+    text-align: center;
+    font-feature-settings: inherit;
+    line-height: 140%;
+    color: var(--slate-500);
+    letter-spacing: .0125rem;
+}
+
+h1, p {
+    width: 100%;
+    max-width: 250px;
+    margin: 0;
+    text-align: center;
+}
+
+.attribution {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 375px) {
+    .card-component {
+        width: auto;
+        max-width: 320px;
+        height: auto;
+        max-height: 499px;
+        border-radius: 20px;
+        background-color: var(--white);
+        margin: 1.25rem;
+        box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-300);
+
+
+    }
+
+    .qr-code-img {
+        width: auto;
+        max-width: 288px;
+        height: auto;
+        max-height: 288px;
+        border-radius: 10px;
+        background-color: var(--color-blue-600);
+        margin-bottom: var(--spacing-300);
+
+
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        gap: var(--spacing-200);
+        justify-content: center;
+        width: 100%;
+        padding: 0 1rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 376px) {
+
+    body {
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+    .card-component {
+
+        width: auto;
+        max-width: 320px;
+        height: auto;
+        max-height: 499px;
+        border-radius: 20px;
+        background-color: var(--white);
+        margin: 1.25rem auto;
+        box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-300);
+
+
+    }
+
+    .qr-code-img {
+        width: auto;
+        max-width: 288px;
+        height: auto;
+        max-height: 288px;
+        border-radius: 10px;
+        background-color: var(--color-blue-600);
+        margin-bottom: var(--spacing-300);
+
+
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        gap: var(--spacing-200);
+        justify-content: center;
+        width: 100%;
+        padding: 0 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+}
